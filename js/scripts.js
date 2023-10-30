@@ -32,10 +32,10 @@ myTravelLocations.addLocation(lasvegas);
 function displayInformation() {
   event.preventDefault();
   const selection = document.getElementById("locationDropdown").value;
-  let resultsList = document.getElementById("listHolder");
+  let resultsListUl = document.getElementById("listHolder");
 
 //Clear previous results
-resultsList.innerHTML = '';
+resultsListUl.innerHTML = '';
 
   let landmarksLi = document.createElement("li");
   let timeOfYearLi = document.createElement("li");
@@ -47,9 +47,9 @@ resultsList.innerHTML = '';
   notesLi.append(" Notes: " + myTravelLocations.destinations[selection].notes);
 
   
-  resultsList.appendChild(landmarksLi);
-  resultsList.appendChild(timeofYearLi);
-  resultsList.appendChild(notesLi);
+  resultsListUl.appendChild(landmarksLi);
+  resultsListUl.appendChild(timeOfYearLi);
+  resultsListUl.appendChild(notesLi);
 }
 
 window.addEventListener("load", function() {
