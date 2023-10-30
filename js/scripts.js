@@ -5,7 +5,7 @@ function TravelLocations() {
 }
 
 TravelLocations.prototype.addLocation = function(newDestination) {
-  this.destinations = newDestination;
+  this.destinations[newDestination.location] = newDestination;
 }
 
 
