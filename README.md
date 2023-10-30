@@ -8,5 +8,5 @@ Expected Output:(inputname)
 Describe TravelLocations.prototype.addDestination
 
 Test: "It will add a specified Destination to the TravelLocations list"
-Code: TravelLocations.prototype.addDestination(name, location, landmarks, timeOfYear, notes)
+Code: TravelLocations.prototype.addDestination(location, landmarks, timeOfYear, notes)
 Expected Output: undefined
